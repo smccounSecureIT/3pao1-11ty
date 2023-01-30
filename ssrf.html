@@ -2,18 +2,15 @@
 <html>
 <body>
 
-<p>Click the button to create an URL field.</p>
+<h2>HTML Forms</h2>
 
-<button onclick="myFunction()">Try it</button>
+<form action=url method="get">
+  <label for="url">URL:</label><br>
+  <input type="text" id="url" name="url" value="https://google.com"><br>
+  <input type="submit" value="Submit">
+</form> 
 
-<script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "url");
-  x.setAttribute("value", "");
-  document.body.appendChild(x);
-}
-</script>
+<p>Submit will create get request to the specified URL.</p>
 
 </body>
 </html>
